@@ -3,8 +3,8 @@
 build:
 	./gradlew build
 
-.PHONY: start
-start:
+.PHONY: run
+run:
 	java -jar "build/libs/airbnb-scraper.jar"
 
 start-docker:
