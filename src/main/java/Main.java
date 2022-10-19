@@ -4,13 +4,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.chromium.ChromiumDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 import java.util.Optional;
-import java.util.logging.Level;
 
 public class Main {
 
@@ -18,8 +16,7 @@ public class Main {
 
         // Airbnb has dynamically loaded content, which means simple curl
         // request to the site won't render all the information in the elements.
-        // To overcome this we need an actual browser engine to make sure all consecutive
-        // AJAX calls and scripts are run before trying to parse the page.
+        // To overcome this we need an actual browser engine to make sure all the JS scripts have run.
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");

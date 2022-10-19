@@ -113,6 +113,6 @@ public class BathroomFilterTest {
         var doc = Jsoup.parse(html);
         var got = filter.filter(doc);
 
-        assertTrue(got.isEmpty() );
+        assertTrue(got.isEmpty());
     }
 }

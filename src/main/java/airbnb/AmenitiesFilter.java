@@ -3,7 +3,6 @@ package airbnb;
 import model.Attribute;
 import org.jsoup.nodes.Document;
 
-import java.util.HashSet;
 import java.util.Optional;
 
 class AmenitiesFilter implements Filter {

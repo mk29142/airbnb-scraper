@@ -8,7 +8,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 import java.net.URL;
-import java.sql.Time;
 import java.util.List;
 import java.util.Optional;
 
